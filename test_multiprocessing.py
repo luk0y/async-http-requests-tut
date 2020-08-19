@@ -13,6 +13,7 @@ def fetch(session, url):
 
 if __name__ == "__main__":
     @timer(1, 1)
+    
     def main():
         with Pool() as pool:
             with requests.Session() as session:
